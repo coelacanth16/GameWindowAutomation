@@ -79,14 +79,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\GitHub\KeyboardListener\KeyboardListener\KeyboardListener.csproj">
-      <Project>{f4241f49-a243-448e-88a7-319f9cab8675}</Project>
-      <Name>KeyboardListener</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\GitHub\WindowScrape\Source\WindowScrape.csproj">
-      <Project>{9ee32ba3-7b86-44b3-9f85-9edb0eacf710}</Project>
-      <Name>WindowScrape</Name>
-    </ProjectReference>
     <ProjectReference Include="..\GameWindowAutomation.Core\GameWindowAutomation.Core.csproj">
       <Project>{3fa7df28-3fc5-4ad3-b023-befe02802866}</Project>
       <Name>GameWindowAutomation.Core</Name>

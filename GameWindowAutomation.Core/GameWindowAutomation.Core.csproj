@@ -34,6 +34,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -45,14 +46,21 @@
     <Compile Include="GameInstanceWindow.cs" />
     <Compile Include="GameStateTransition.cs" />
     <Compile Include="GameWindowState.cs" />
+    <Compile Include="IOHookManager\GlobalEventProvider.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="IOHookManager\HookManager.Callbacks.cs" />
+    <Compile Include="IOHookManager\HookManager.cs" />
+    <Compile Include="IOHookManager\HookManager.Structures.cs" />
+    <Compile Include="IOHookManager\HookManager.Windows.cs" />
+    <Compile Include="IOHookManager\MouseEventExtArgs.cs" />
+    <Compile Include="WindowScrape\HwndInterface.cs" />
+    <Compile Include="WindowScrape\HwndObject.cs" />
+    <Compile Include="WindowScrape\PositioningFlags.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WindowScrape\RECT.cs" />
     <Compile Include="Utilities.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\..\GitHub\WindowScrape\Source\WindowScrape.csproj">
-      <Project>{9ee32ba3-7b86-44b3-9f85-9edb0eacf710}</Project>
-      <Name>WindowScrape</Name>
-    </ProjectReference>
+    <Compile Include="WindowScrape\WM.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
